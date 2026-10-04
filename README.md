@@ -139,7 +139,7 @@ npm install
 npm run dev
 ```
 
-The application will be available at [http://localhost:3000](http://localhost:3000).
+The application will be available at [https://kortex-ai-seven.vercel.app/](https://kortex-ai-seven.vercel.app/)
 
 ### Build for Production
 ```bash
