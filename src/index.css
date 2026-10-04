@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-slate-800 font-sans antialiased;
+  }
+}
+
+.anime-canvas {
+  background:
+    radial-gradient(ellipse at 12% 8%, rgba(255, 190, 215, 0.42), transparent 35%),
+    radial-gradient(ellipse at 88% 14%, rgba(177, 218, 255, 0.48), transparent 38%),
+    radial-gradient(ellipse at 72% 88%, rgba(220, 199, 255, 0.34), transparent 36%),
+    linear-gradient(135deg, #fff9fc 0%, #f5f8ff 52%, #fff9f2 100%);
+}
+
+.anime-mascot {
+  width: clamp(150px, 19vw, 230px);
+  right: 5%;
+  bottom: 78px;
+  opacity: 0.24;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.65);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.4);
+}
+
+.glass-header {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+}
